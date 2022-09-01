@@ -1,13 +1,33 @@
-.navbar-nav a{
-    position: relative;
-    opacity: 0;
-    animation: fadeIn 1s ease both;
+.nosobre{
+    background-color: #0A192F;
+    color: white;
+    
 }
+
+.navbar-collapse{
+    display: flex;
+    justify-content: end;
+}
+
+/* Logo with animation */
 .navbar-brand{
     position: relative;
     opacity: 0;
     animation: fadeIn 1s ease both;
 }
+/* Menu button with animation */
+.navbar-toggler{
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s ease both;
+}
+/* Link with animation */
+.navbar-nav a{
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s ease both;
+}
+/* Animation delay for lasts links */
 .navbar-nav a:nth-child(2){
     animation-delay: 200ms;
 }
@@ -17,7 +37,28 @@
 .navbar-nav a:nth-child(4){
     animation-delay: 600ms;
 }
+/* Fade in animation */
 @keyframes fadeIn {
     0% {top: -2em; opacity: 0;}
     100% {top: 0; opacity: 1;}
+}
+
+/* Menu bars */
+.fa-bars{
+    color: white;
+    font-size: 1.3em;
+}
+
+
+.sobre{
+    background-color: #0A192F;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(0px);
+    animation: fadeIn 0.5s ease both;
+    z-index: 11;
+
 }

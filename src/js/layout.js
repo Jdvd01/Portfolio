@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import injectContext from "./store/appContext";
-
 import { Home } from "./views/Home.jsx";
 import { Navbar } from "./component/Navbar/Navbar.jsx";
 import { Footer } from "./component/Footer/Footer.jsx";
