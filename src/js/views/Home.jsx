@@ -6,5 +6,42 @@ export const Home = () => (
 		<h1>
 			Portfolio en construccion 😁
 		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		<h1>
+			Portfolio en construccion 😁
+		</h1>
+		
 	</div>
 );
