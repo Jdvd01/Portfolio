@@ -11,15 +11,15 @@ export const Footer = () => (
 		</p>
 		<hr />
 		<div className="row iconos">
-			<Link to={""} className="col-1">
+			<a href="https://github.com/Jdvd01" target={"_blank"} className="col-1">
 				<i className="fa-brands fa-github "></i>
-			</Link>
-			<Link to={""} className="col-1">
+			</a>
+			<a href="https://instagram.com/josevelasquez010" target={"_blank"} className="col-1">
 				<i className="fa-brands fa-instagram "></i>
-			</Link>
-			<Link to={""} className="col-1">
+			</a>
+			<a href="https://www.linkedin.com/in/jdvd01/" target={"_blank"} className="col-1">
 				<i className="fa-brands fa-linkedin-in "></i>
-			</Link>
+			</a>
 		</div>
 	</footer>
 );
