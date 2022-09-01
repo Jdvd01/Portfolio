@@ -1,3 +1,35 @@
 /* 
     General Styles
 */
+body{
+    background-color: #0A192F;
+    color: #45686A;
+}
+body::-webkit-scrollbar {
+    width: 6px;     /* Ancho del scroll */
+}
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 1 2 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+body::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 40px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: transparent;
+}

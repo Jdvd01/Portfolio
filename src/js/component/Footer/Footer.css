@@ -1,5 +1,5 @@
 footer{
-    background-color: black;
+    background-color: #0A192F;
     color: white;
     position: fixed;
     bottom: 0;
@@ -16,7 +16,7 @@ footer p{
     margin: 0;
 }
 hr{
-    margin: 1em auto;
+    margin: 0.5em auto;
     width: 50%;
 }
 .iconos{
