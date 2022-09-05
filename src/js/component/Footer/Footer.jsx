@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-
 
 import "./Footer.css"
 
@@ -10,7 +8,7 @@ export const Footer = () => (
 			Made with <i className="fa fa-heart text-danger" /> by <a href="https://github.com/jdvd01" target={"_blank"}>Jose Velasquez</a>
 		</p>
 		<hr />
-		<div className="row iconos">
+		<div className="row icons">
 			<a href="https://github.com/Jdvd01" target={"_blank"} className="col-1">
 				<i className="fa-brands fa-github "></i>
 			</a>

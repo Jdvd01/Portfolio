@@ -1,6 +1,6 @@
 footer{
     background-color: #0A192F;
-    color: white;
+    color: #8892B0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -8,10 +8,16 @@ footer{
     justify-content: space-evenly;
     flex-direction: column;
 }
+/* Footer anchors */
 footer a{
     text-decoration: none;
-    color: white;
+    color: #8892B0;
+
 }
+footer a:hover{
+    color: #53D3B9;
+}
+/* Paragraph */
 footer p{
     margin: 0;
 }
@@ -19,7 +25,7 @@ hr{
     margin: 0.5em auto;
     width: 50%;
 }
-.iconos{
+.icons{
     display: flex;
     justify-content: center;
     font-size: 1.5em;
