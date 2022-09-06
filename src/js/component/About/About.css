@@ -1,21 +1,28 @@
-.about-me > div > *{
+.about-me > div > *, .presentation > div > *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* General container */
 .about-me{
-    margin: 4rem 5rem 0 5rem;
+    margin: 5rem 5rem 0 5rem;
+    padding-bottom: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* Handshake */
 .hand{
     display: inline-block;
     z-index: 1;
-    animation: example 0.5s ease infinite;
+    animation: handShake 0.5s ease infinite;
 }
-.img-container{
-    margin: auto 0;
+/* Handshake animation */
+@keyframes handShake{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
 }
 img{
     width: 100%;
@@ -23,22 +30,98 @@ img{
     object-fit: cover;
     border-radius: 50%;
 }
+.img-container{
+    margin: auto;
+}
 
-@keyframes example{
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(20deg);}
-    100% {transform: rotate(0deg);}
+.more-about{
+    margin-top: 3rem;
 }
-/* h1{
-    font-size: clamp(14px ,5vw, 16px);
-} */
-h2{
+
+.info-container h2, ul li{
     color: #CCD6F6;
-    /* font-size: clamp(40px, 8vw, 80px); */
 }
-/* h3{
-    font-size: clamp(40px, 8vw, 80px);
-} */
-h3, p{
+
+.info-container h3, .info-container p{
     color: #8892B0;
+}
+.more-about >div>ul{
+    list-style: none;
+}
+.numList{
+    color: #53D3B9;
+}
+
+/* XL Screen */
+@media (min-width: 1200px){
+    .info-container h1{
+        font-size: 2rem;
+    }
+    .info-container h2{
+        font-size: 5rem;
+    }
+    .info-container h3{
+        font-size: 4rem;
+    }
+    .info-container p{ 
+        font-size: 2rem
+    }
+}
+/* Large screen */
+@media (min-width: 992px) and (max-width: 1199px){
+    .info-container h1{
+        font-size: 1.3rem;
+    }
+    .info-container h2{
+        font-size: 4rem;
+    }
+    .info-container h3{
+        font-size: 3rem;
+    }
+    .info-container p{ 
+        font-size: 1.3rem
+    }
+}
+/* Medium screen */
+@media (min-width: 768px) and (max-width: 991px){
+    .info-container h1{
+        font-size: 1.3rem;
+    }
+    .info-container h2{
+        font-size: 3rem;
+    }
+    .info-container h3{
+        font-size: 2rem;
+    }
+    .info-container p{ 
+        font-size: 1.3rem
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .info-container h1{
+        font-size: 1rem;
+    }
+    .info-container h2{
+        font-size: 2.5rem;
+    }
+    .info-container h3{
+        font-size: 1.5rem;
+    }
+    .info-container p{ 
+        font-size: 1rem
+    }
+}
+@media (max-width: 575px){
+    .info-container h1{
+        font-size: 1.3rem;
+    }
+    .info-container h2{
+        font-size: 2.5rem;
+    }
+    .info-container h3{
+        font-size: 1.7rem;
+    }
+    .info-container p{ 
+        font-size: 1.3rem
+    }
 }
