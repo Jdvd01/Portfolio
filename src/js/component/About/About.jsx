@@ -16,7 +16,7 @@ const About = () => {
                 </p>
             </div>
             <div className='row more-about'>
-                <div className='col-12 col-md-6 languages'>
+                <div className='col-12 col-sm-6 col-md-6 col-lg-6 languages'>
                     <h3>
                         Idiomas:
                     </h3>
@@ -25,7 +25,7 @@ const About = () => {
                         <li><span className="numList">02.</span> Inglés: Medio</li>
                     </ul>
                 </div>
-                <div className='col-12 col-md-6 hobbies'>
+                <div className='col-12 col-sm-6 col-md-6 col-lg-6 hobbies'>
                     <h3>
                         Pasatiempos:
                     </h3>
