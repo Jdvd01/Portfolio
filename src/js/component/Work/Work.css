@@ -13,7 +13,7 @@
 h1, .card-container{
     position: relative;
     opacity: 0;
-    animation: fadeUp 1s ease both;
+    animation: fadeWork 1s ease both;
 }
 h1{
     margin-bottom: 1rem;
@@ -26,8 +26,8 @@ h1{
     animation-delay: 800ms;
 }
 
-@keyframes fadeUp {
-    0% {bottom: -2em; opacity: 0;}
+@keyframes fadeWork {
+    0% {bottom: -10em; opacity: 0;}
     100% {bottom: 0; opacity: 1;}
 }
 

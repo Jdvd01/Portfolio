@@ -7,6 +7,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    animation: fadeFooter 1s ease both;
 }
 /* Footer anchors */
 footer a{
@@ -29,4 +30,9 @@ hr{
     display: flex;
     justify-content: center;
     font-size: 1.5em;
+}
+
+@keyframes fadeFooter {
+    0% {bottom: -7em; opacity: 0;}
+    100% {bottom: 0; opacity: 1;}
 }

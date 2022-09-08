@@ -1,5 +1,6 @@
 .navbar{
     background-color: #0A192F;
+    z-index: 1;
 }
 /* Anchor list */
 .nav-link{
@@ -27,7 +28,7 @@
 .navbar-brand, .navbar-toggler, .navbar-nav a, .flag{
     position: relative;
     opacity: 0;
-    animation: fadeIn 1s ease both;
+    animation: fadeNavbar 1s ease both;
 }
 /* Animation delay for lasts links */
 .navbar-nav a:nth-child(2){
@@ -46,8 +47,8 @@
     animation-delay: 1500ms;
 }
 /* Fade in animation */
-@keyframes fadeIn {
-    0% {top: -2em; opacity: 0;}
+@keyframes fadeNavbar {
+    0% {top: -5em; opacity: 0;}
     100% {top: 0; opacity: 1;}
 }
 
