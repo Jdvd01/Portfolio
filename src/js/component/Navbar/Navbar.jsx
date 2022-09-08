@@ -2,9 +2,10 @@ import React, { useState, useContext } from "react";
 
 import "./Navbar.css"
 import { Link } from "react-router-dom";
+import { Context } from "../../store/appContext";
 
 export const Navbar = () => {
-
+	const {store, actions} = useContext(Context)
 	const [scrolling, setScrolling] = useState(true)
 	const [position, setPosition] = useState()
 
@@ -24,16 +25,27 @@ export const Navbar = () => {
 	return (
 		<nav className={`navbar navbar-expand-lg ${scrolling ? "scrolling" : ""}`}>
 			<div className="container-fluid">
-				<Link className="navbar-brand" to={"/"}>Navbar</Link>
+				<div className="d-flex">
+					<Link className="navbar-brand" to={"/"}>
+						<img src="https://avatars.githubusercontent.com/u/97990022?s=400&u=198211576ca589ce60e75a85d07ce4454bba5e52&v=4" alt="Imagen de perfil" />
+					</Link>
+
+					{/* Upcoming */}
+					
+					{/* <div className="flag">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt="" />
+					</div> */}
+				</div>
 				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<i className="fa-solid fa-bars"></i>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div className="navbar-nav text-start">
-						<Link className="nav-link" to={"/"}><span className="numList">01.</span> About</Link>
-						<Link className="nav-link" to={"/"}><span className="numList">02.</span> Experience</Link>
-						<Link className="nav-link" to={"/"}><span className="numList">03.</span> Work</Link>
-						<Link className="nav-link" to={"/"}><span className="numList">04.</span> Contact</Link>
+						<Link className="nav-link" to={"/"}><span className="numList">01.</span> Sobre mi</Link>
+						<Link className="nav-link" to={"/skills"}><span className="numList">02.</span> Habilidades</Link>
+						<Link className="nav-link" to={"/projects"}><span className="numList">03.</span> Proyectos</Link>
+						<Link className="nav-link" to={"/work"}><span className="numList">04.</span> Trabajo</Link>
+						<Link className="nav-link" to={"/contact"}><span className="numList">05.</span> Contacto</Link>
 					</div>
 				</div>
 			</div>

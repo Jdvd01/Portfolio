@@ -112,6 +112,9 @@ img{
     }
 }
 @media (max-width: 575px){
+    .img-container{
+        margin: 1rem;
+    }
     .info-container h1{
         font-size: 1.3rem;
     }
