@@ -1,3 +1,90 @@
-.contact{
+.contact {
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.field label {
+    display: block;
+    font-size: 1.2rem;
+    color: #CCD6F6;
+    padding-left: 0.3rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.field input{
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    padding: 1rem;
+}
+
+#button {
+    width: 100%;
+    padding: 6px 30px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #8892B0;
+    border: 1px solid #53D3B9;
+    border-radius: 10px;
+}
+#button:hover{
+    color: #53D3B9;
+}
+#message{
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    resize: none;
+}
+.mail-header{
+    justify-content: flex-start;
+}
+
+#form div:nth-child(1),  #form div:nth-child(3){
+    position: relative;
+    opacity: 0;
+    animation: fadeRight 1s ease both;
+}
+#form div:nth-child(2),  #button, .mail-header{
+    position: relative;
+    opacity: 0;
+    animation: fadeLeft 1s ease both;
+}
+#form div:nth-child(1){
+    animation-delay: 400ms;
+}
+#form div:nth-child(2){
+    animation-delay: 800ms;
+}
+#form div:nth-child(3){
+    animation-delay: 1200ms;
+}
+#button{
+    animation-delay: 1400ms;
+}
+
+@keyframes fadeLeft {
+    0% {left: -10em; opacity: 0;}
+    100% {left: 0; opacity: 1;}
+}
+@keyframes fadeRight {
+    0% {right: -10em; opacity: 0;}
+    100% {right: 0; opacity: 1;}
 }

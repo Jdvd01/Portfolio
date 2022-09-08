@@ -10,12 +10,12 @@
 
 
 /* Animations */
-h1, .card-container{
+.work-header, .card-container{
     position: relative;
     opacity: 0;
     animation: fadeWork 1s ease both;
 }
-h1{
+.work-header{
     margin-bottom: 1rem;
     animation-delay: 400ms;
 }

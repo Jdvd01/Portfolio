@@ -39,7 +39,7 @@ const Work = () => {
     return (
         <>
             <div className="work-container container">
-                <h1>Experiencia profesional:</h1>
+                <h1 className='work-header'><i className="fas fa-briefcase"></i> Experiencia profesional:</h1>
                 <div className='row'>
                     {professionalExperience.map((item, index) => {
                         const { alt, description, img, button, title } = item
