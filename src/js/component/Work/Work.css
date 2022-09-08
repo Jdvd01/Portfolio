@@ -2,19 +2,36 @@
     margin: 0 auto 0 auto;
     padding-top: 5rem;
 }
-h1{
-    margin-bottom: 1rem;
-}
 .row{
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
+
+
+/* Animations */
+h1, .card-container{
+    position: relative;
+    opacity: 0;
+    animation: fadeUp 1s ease both;
+}
+h1{
+    margin-bottom: 1rem;
+    animation-delay: 400ms;
+}
 .card-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-delay: 800ms;
 }
+
+@keyframes fadeUp {
+    0% {bottom: -2em; opacity: 0;}
+    100% {bottom: 0; opacity: 1;}
+}
+
+/* Responsive */
 @media (min-width: 992px) and (max-width: 1199px){
     .work-container{
         padding-bottom: 7rem;

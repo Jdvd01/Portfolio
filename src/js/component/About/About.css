@@ -51,6 +51,28 @@ img{
     color: #53D3B9;
 }
 
+.img-container, .info-container, .languages, .hobbies{
+    position: relative;
+    opacity: 0;
+    animation: fadeUp 1s ease both;
+}
+.img-container{
+    animation-delay: 400ms;
+}
+.info-container{
+    animation-delay: 800ms;
+}
+.languages{
+    animation-delay: 1200ms;
+}
+.hobbies{
+    animation-delay: 1600ms;
+}
+@keyframes fadeUp {
+    0% {bottom: -2em; opacity: 0;}
+    100% {bottom: 0; opacity: 1;}
+}
+
 /* XL Screen */
 @media (min-width: 1200px){
     .info-container h1{
