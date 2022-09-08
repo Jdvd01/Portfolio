@@ -8,20 +8,19 @@ export const Footer = () => (
 			Made with <i className="fa fa-heart text-danger" /> by <a href="https://github.com/jdvd01" target={"_blank"}>Jose Velasquez</a>
 		</p>
 		<hr />
-		<div className="row icons">
-			<a href="https://github.com/Jdvd01" target={"_blank"} className="col-1">
-				<i className="fa-brands fa-github "></i>
+		<div className="icons">
+			<a href="https://github.com/Jdvd01" target={"_blank"} className="icon-anchor">
+				<i className="fa-brands fa-github  col-1"></i>
 			</a>
-			<a href="https://instagram.com/josevelasquez010" target={"_blank"} className="col-1">
-				<i className="fa-brands fa-instagram "></i>
+			<a href="https://instagram.com/josevelasquez010" target={"_blank"} className="icon-anchor">
+				<i className="fa-brands fa-instagram  col-1"></i>
 			</a>
-			<a href="https://www.linkedin.com/in/jdvd01/" target={"_blank"} className="col-1">
-				<i className="fa-brands fa-linkedin-in "></i>
+			<a href="https://www.linkedin.com/in/jdvd01/" target={"_blank"} className="icon-anchor">
+				<i className="fa-brands fa-linkedin-in  col-1"></i>
 			</a>
-			<a href="https://wa.me/+584121942352" target={"_blank"} className="col-1">
-				<i className="fa-brands fa-whatsapp"></i>
+			<a href="mailto:velasquezdenorajose@gmail.com" target={"_blank"} className="icon-anchor">
+				<i className="fa-regular fa-envelope col-1"></i>
 			</a>
-			
 		</div>
 	</footer>
 );
