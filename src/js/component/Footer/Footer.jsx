@@ -18,6 +18,10 @@ export const Footer = () => (
 			<a href="https://www.linkedin.com/in/jdvd01/" target={"_blank"} className="col-1">
 				<i className="fa-brands fa-linkedin-in "></i>
 			</a>
+			<a href="https://wa.me/+584121942352" target={"_blank"} className="col-1">
+				<i className="fa-brands fa-whatsapp"></i>
+			</a>
+			
 		</div>
 	</footer>
 );

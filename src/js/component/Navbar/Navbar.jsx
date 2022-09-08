@@ -1,13 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 
 import "./Navbar.css"
 import { Link } from "react-router-dom";
-import { Context } from "../../store/appContext";
 
 export const Navbar = () => {
-	const {store, actions} = useContext(Context)
 	const [scrolling, setScrolling] = useState(true)
 	const [position, setPosition] = useState()
+	const [isClicked, setIsClicked] = useState(false)
 
 	const isScroll = (position) => {
 		if (window.scrollY < position || window.scrollY == 0) {
@@ -36,8 +35,18 @@ export const Navbar = () => {
 						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt="" />
 					</div> */}
 				</div>
-				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<i className="fa-solid fa-bars"></i>
+				<button className={`navbar-toggler navButton ${isClicked ? "close" : "open"}`} 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarNavAltMarkup" 
+				aria-controls="navbarNavAltMarkup" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation"
+				onClick={() => setIsClicked((prev) => !prev)}
+				>
+					<div></div>
+					<div></div>
+					<div></div>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div className="navbar-nav text-start">
