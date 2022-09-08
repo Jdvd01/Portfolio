@@ -1,0 +1,24 @@
+.card{
+    width: 21rem;
+    background: transparent;
+    border: 1px solid #53D3B9;
+    z-index: -1;
+}
+.logo-container{
+    height: 14rem;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.cardButton{
+    color: #8892B0;
+    border: 1px solid #53D3B9;
+}
+.cardButton:hover{
+    color: #53D3B9;
+}
+.card-text{
+    color: #CCD6F6;
+}

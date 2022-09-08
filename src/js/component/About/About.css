@@ -6,8 +6,8 @@
 
 /* General container */
 .about-me{
-    margin: 5rem 5rem 0 5rem;
-    padding-bottom: 10rem;
+    margin: 0 5rem 0 5rem;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,6 @@
 /* Handshake */
 .hand{
     display: inline-block;
-    z-index: 1;
     animation: handShake 0.5s ease infinite;
 }
 /* Handshake animation */
@@ -35,7 +34,7 @@ img{
 }
 
 .more-about{
-    margin-top: 3rem;
+    margin: 1.5rem 0 7rem 0;
 }
 
 .info-container h2, ul li{

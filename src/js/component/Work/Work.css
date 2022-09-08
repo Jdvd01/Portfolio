@@ -1,3 +1,38 @@
-.work{
-    margin-top: 5rem;
+.work-container{
+    margin: 0 auto 0 auto;
+    padding-top: 5rem;
+}
+h1{
+    margin-bottom: 1rem;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .work-container{
+        padding-bottom: 7rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    h1{
+        margin-bottom: 1rem;
+    }
+    .card-container{
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 575px){
+    .card-container{
+        margin-bottom: 2rem;
+    }
+    .work-container{
+        padding-bottom: 5rem;
+    }
 }
