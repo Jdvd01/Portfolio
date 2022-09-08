@@ -1,7 +1,7 @@
 import React from 'react';
 import "./About.css"
 
-const AboutES = () => {
+const About = () => {
     return (
         <div className='row about-me'>
             <div className='col-xl-2 col-lg-4 col-md-3 col-sm-4 col-12 img-container'>
@@ -41,4 +41,4 @@ const AboutES = () => {
     );
 };
 
-export default AboutES;
+export default About;
