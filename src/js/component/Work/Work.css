@@ -13,7 +13,7 @@
 .work-header, .card-container{
     position: relative;
     opacity: 0;
-    animation: fadeWork 1s ease both;
+    animation: fadeWork 0.5s ease both;
 }
 .work-header{
     margin-bottom: 1rem;

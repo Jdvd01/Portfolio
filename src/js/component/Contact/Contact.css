@@ -60,12 +60,12 @@
 #form div:nth-child(1),  #form div:nth-child(3){
     position: relative;
     opacity: 0;
-    animation: fadeRight 1s ease both;
+    animation: fadeRight 0.5s ease both;
 }
 #form div:nth-child(2),  #button, .mail-header{
     position: relative;
     opacity: 0;
-    animation: fadeLeft 1s ease both;
+    animation: fadeLeft 0.5s ease both;
 }
 #form div:nth-child(1){
     animation-delay: 400ms;

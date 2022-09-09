@@ -54,7 +54,7 @@ img{
 .img-container, .info-container, .languages, .hobbies{
     position: relative;
     opacity: 0;
-    animation: fadeAbout 1s ease both;
+    animation: fadeAbout 0.5s ease both;
 }
 .img-container{
     animation-delay: 400ms;
