@@ -3,11 +3,15 @@ import Card from '../Card/Card.jsx';
 
 import "./Work.css"
 
+// Work images
+import Four_Geeks from "../../../imgs/Work/4Geeks_logo.png"
+import Farmatodo from "../../../imgs/Work/Farmatodo.png"
+
 const Work = () => {
 
     const professionalExperience = [
         {
-            img: "https://play-lh.googleusercontent.com/4r8YvH3eLH2Q_U4hGz6aBHihLqjgFl06w-suyesqtFPL9xQnqhRKxE1_JEhNc9yj6Q=w240-h480-rw",
+            img: Farmatodo,
             alt: "Logo Farmatodo",
             title: "Farmatodo C.A.",
             description: [
@@ -21,7 +25,7 @@ const Work = () => {
             }
         },
         {
-            img: "https://4geeks.com/static/images/4geeks.png",
+            img: Four_Geeks,
             alt: "Logo 4Geeks Academy",
             title: "4Geeks Academy",
             description: [
