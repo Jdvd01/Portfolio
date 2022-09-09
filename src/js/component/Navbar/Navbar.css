@@ -28,7 +28,7 @@
 .navbar-brand, .navbar-toggler, .navbar-nav a, .flag{
     position: relative;
     opacity: 0;
-    animation: fadeNavbar 1s ease both;
+    animation: fadeNavbar 0.5s ease both;
 }
 /* Animation delay for lasts links */
 .navbar-nav a:nth-child(2){
