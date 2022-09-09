@@ -1,5 +1,5 @@
 .contact {
-    margin-top: 5rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,6 +78,12 @@
 }
 #button{
     animation-delay: 1400ms;
+}
+
+.alert{
+    position: relative;
+    opacity: 0;
+    animation: fadeLeft 1s ease both;
 }
 
 @keyframes fadeLeft {
