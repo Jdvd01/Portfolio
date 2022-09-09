@@ -17,6 +17,7 @@ const Contact = () => {
             }, (err) => {
                 alert(JSON.stringify(err));
             });
+        event.target.reset()
     };
 
 
