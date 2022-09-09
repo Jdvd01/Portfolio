@@ -73,7 +73,7 @@
 .team_work{
     margin-bottom: 0.35rem;
 }
-.skills-title{
+.skills-title, figcaption{
     text-align: center;
 }
 
