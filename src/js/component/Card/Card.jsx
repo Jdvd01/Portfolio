@@ -33,7 +33,7 @@ const Card = (props) => {
                         {props.description}
                         {props.technologies}
                     </p>
-                    <a href={props.button_url} target={"_blank"} className="btn cardButton">Sitio web</a>
+                    <a href={props.button_url} target={"_blank"} className="btn cardButton">Repositorio</a>
                     {props.deploy_url && 
                         <a href={props.deploy_url} target={"_blank"} className="btn cardButton">Sitio web</a>
                     }

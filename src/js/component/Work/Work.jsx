@@ -19,10 +19,7 @@ const Work = () => {
                 "Mantenerme al corriente de la información sobre los productos.",
                 "Atención al cliente."
             ],
-            button: {
-                url: "https://www.farmatodo.com.ve/",
-                description: "Pagina web"
-            }
+            button_url: "https://www.farmatodo.com.ve/",
         },
         {
             img: Four_Geeks,
