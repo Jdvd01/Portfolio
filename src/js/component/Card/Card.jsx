@@ -5,6 +5,7 @@ import "./Card.css"
 const Card = (props) => {
     return (
         <>
+        {props.section == "work" ? (
             <div className="card">
                 <div className='logo-container'>
                     <img src={props.img} className="card-img-top" alt={props.alt} />
@@ -17,9 +18,29 @@ const Card = (props) => {
                         - {props.description[1]} <br />
                         - {props.description[2]}
                     </p>
-                    <a href={props.button.url} target={"_blank"} className="btn cardButton">{props.button.description}</a>
+                    <a href={props.button_url} target={"_blank"} className="btn cardButton">Sitio web</a>
                 </div>
             </div>
+        ) : (
+            <div className="card">
+                <div className='logo-container'>
+                    <img src={props.img} className="card-img-top" alt={props.alt} />
+                </div>
+                <div className="card-body">
+                    <h5 className="card-title text-center">{props.title}</h5>
+                    <hr />
+                    <p className="card-text">
+                        {props.description}
+                        {props.technologies}
+                    </p>
+                    <a href={props.button_url} target={"_blank"} className="btn cardButton">Sitio web</a>
+                    {props.deploy_url && 
+                        <a href={props.deploy_url} target={"_blank"} className="btn cardButton">Sitio web</a>
+                    }
+                </div>
+            </div>
+        )}
+            
         </>
     );
 };

@@ -25,7 +25,7 @@
 }
 
 /* Logo, button, and anchors with animation */
-.navbar-brand, .navbar-toggler, .navbar-nav a, .flag{
+.navbar-brand, .navbar-toggler, .navbar-nav a, .flag, .scrolling{
     position: relative;
     opacity: 0;
     animation: fadeNavbar 0.5s ease both;
@@ -87,5 +87,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    animation: fadeIn 0.5s ease both;
+    transform: translateY(0px);
+
 }
