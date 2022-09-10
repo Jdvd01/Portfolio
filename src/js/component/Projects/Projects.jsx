@@ -17,14 +17,14 @@ const Projects = () => {
             button_url: "https://github.com/Jdvd01/star-wars-blog",
             deploy_url: "https://star-wars-blog-nu.vercel.app/"
         },
-        // {
-        //     img: Star_Wars,
-        //     alt: "Star wars project",
-        //     title: "Star wars blog",
-        //     description: "Hola ",
-        //     button_url: "https://github.com/Jdvd01/star-wars-blog",
-        //     deploy_url: null
-        // }
+        {
+            img: Star_Wars,
+            alt: "Star wars project",
+            title: "Star wars blog",
+            description: "Hola ",
+            button_url: "https://github.com/Jdvd01/star-wars-blog",
+            deploy_url: null
+        }
     ]
 
     return (
