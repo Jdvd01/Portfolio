@@ -25,7 +25,7 @@
 }
 
 /* Logo, button, and anchors with animation */
-.navbar-brand, .navbar-toggler, .navbar-nav a, .flag{
+.navbar-brand, .navbar-toggler, .navbar-nav a, .flag, .scrolling{
     position: relative;
     opacity: 0;
     animation: fadeNavbar 0.5s ease both;
@@ -45,11 +45,6 @@
 }
 .navbar-nav a:nth-child(6){
     animation-delay: 1500ms;
-}
-/* Fade in animation */
-@keyframes fadeNavbar {
-    0% {top: -5em; opacity: 0;}
-    100% {top: 0; opacity: 1;}
 }
 
 /* Menu bars with animation */
@@ -87,5 +82,12 @@
     position: fixed;
     top: 0;
     width: 100%;
-    animation: fadeIn 0.5s ease both;
+    transform: translateY(0px);
+    
+}
+
+/* Fade in animation */
+@keyframes fadeNavbar {
+    0% {top: -5em; opacity: 0;}
+    100% {top: 0; opacity: 1;}
 }

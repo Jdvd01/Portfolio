@@ -19,10 +19,7 @@ const Work = () => {
                 "Mantenerme al corriente de la información sobre los productos.",
                 "Atención al cliente."
             ],
-            button: {
-                url: "https://www.farmatodo.com.ve/",
-                description: "Pagina web"
-            }
+            button_url: "https://www.farmatodo.com.ve/",
         },
         {
             img: Four_Geeks,
@@ -33,10 +30,7 @@ const Work = () => {
                 "Ayudar a los alumnos a adaptarse y aprender.",
                 "Apoyar a los alumnos en el proceso de aprendizaje."
             ],
-            button: {
-                url: "https://4geeksacademy.com/",
-                description: "Pagina web"
-            }
+            button_url: "https://4geeksacademy.com/",
         }
     ]
 
@@ -46,7 +40,7 @@ const Work = () => {
                 <h1 className='work-header'><i className="fas fa-briefcase"></i> Experiencia profesional:</h1>
                 <div className='row'>
                     {professionalExperience.map((item, index) => {
-                        const { alt, description, img, button, title } = item
+                        const { alt, description, img, button_url, title } = item
                         return (
                             <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-6 card-container">
                                 <Card
@@ -54,8 +48,9 @@ const Work = () => {
                                     alt={alt}
                                     description={description}
                                     img={img}
-                                    button={button}
+                                    button_url={button_url}
                                     title={title}
+                                    section="work"
                                 />
                             </div>
 
