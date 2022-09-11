@@ -17,8 +17,7 @@
     display: flex;
     justify-content: end;
 }
-
-.flag, .navbar-brand img{
+.navbar-brand img{
     width: 50px;
     height: 50px;
     margin: auto;
@@ -85,7 +84,17 @@
     transform: translateY(0px);
     
 }
-
+.languageButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.flag{
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+}
 /* Fade in animation */
 @keyframes fadeNavbar {
     0% {top: -5em; opacity: 0;}

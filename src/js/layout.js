@@ -44,7 +44,7 @@ import footer_en from "../Translations/en/footer.json"
 
 i18next.init({
 	interpolation: { escapeValue: false },
-	lng: "en",
+	lng: "es",
 	resources: {
 		es: {
 			about: about_es,
