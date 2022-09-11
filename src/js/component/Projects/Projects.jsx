@@ -7,6 +7,10 @@ import Card from '../Card/Card.jsx';
 import Star_Wars from "../../../imgs/Img_Proyectos/Star_wars_blog.jpg"
 import Buzzr_web from "../../../imgs/Img_Proyectos/Buzzr_web.jpg"
 
+// SVG
+import ThunderClient from '../Icons/Tools/ThunderClient.jsx';
+
+
 const Projects = () => {
 
     const projects = [
@@ -14,7 +18,10 @@ const Projects = () => {
             img: Star_Wars,
             alt: "Star wars project",
             title: "Star wars blog",
-            description: "Hola ",
+            description: "Blog de Star Wars hecho con React, react router DOM, arquitectura Flux, uso de Context",
+            technologies: [
+
+            ],
             button_url: "https://github.com/Jdvd01/star-wars-blog",
             deploy_url: "https://star-wars-blog-nu.vercel.app/"
         },

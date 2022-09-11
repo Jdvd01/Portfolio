@@ -23,3 +23,9 @@
 .card-text{
     color: #CCD6F6;
 }
+
+
+
+.project-img img{
+    border-radius: 0 0 14px 14px;
+}

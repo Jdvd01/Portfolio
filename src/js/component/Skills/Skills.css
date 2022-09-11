@@ -1,79 +1,55 @@
 .skills{
-    padding: 5rem 0 7rem;
+    padding: 5rem 0 5rem;
     display: flex;
     justify-content: center;
 }
 /* Front skills */
-
 .frontend{
-    padding-bottom: 0.82rem;
+    padding-bottom: 1rem;
 }
-.frontend-technology, .backend-technology, .tool, .soft-skill, .react, .flux{
+.frontend-technology, .backend-technology, .tool, .soft-skill, .react, .flux, .soft-center{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.frontend-technology img{
-    border-radius: 0;
-    width: 3rem;
-}
-.bootstrap img{
-    padding-bottom: 0.6rem;
-}
-.frontend-technology{
-    height: 80%;
-}
-.react img{
-    width: 5rem;
-    padding-bottom: 0.2rem;
-}
-.flux img{
-    padding: 0.4rem 0 1rem 0;
-    border-radius: 0;
-    width: 4rem;
-}
-.react, .flux, .javascript{
-    margin: 0;
-}
-/* Backend skills */
-.backend-technology img{
-    border-radius: 0;
-    width: 5rem;
-}
-.flask img{
-    width: 3rem;
-    padding-bottom: 0.2rem;
-}
-.sql_alchemy img{
-    width: 7rem;
-    padding-bottom: 0.1rem;
-}
-.rest_api img{
-    width: 3rem;
-    padding-bottom: 0.5rem;
-}
-
-/* Tools */
-.tool img{
-    border-radius: 0;
-    width: 3rem;
-}
-.thunder_client img{
-    width: 3.5rem;
-}
-
 /* Soft Skills */
-.soft-skill img{
-    border-radius: 0;
-    width: 4rem;
-}
 .frontend, .backend, .tools-container, .soft-skills-container{
     border: 1px solid #53D3B9;
 }
-.team_work{
-    margin-bottom: 0.35rem;
-}
-.skills-title, figcaption{
+.skills-title, .soft-skill{
     text-align: center;
 }
+.skill-icon, .soft-skill{
+    width: 80px;
+}
+/* Frontend */
+.flux{
+    padding-bottom: 1.3rem;
+}
+/* Backend */
+.backend{
+    padding-bottom: 0.85rem;
+}
+.sql-rest{
+    padding-top: 2rem;
+}
+.tools-container{
+    padding-bottom: 1rem;
+}
+.soft-skills-container{
+    padding-bottom: 2.25rem;
+}
 
+@media (min-width: 768px) and (max-width: 991px){
+    .soft-skills-container{
+        padding-bottom: 1.1rem;
+    }
+    .skills{
+        padding-top: 4.8rem;
+    }
+}
+@media (max-width: 767px){
+    .skills{
+        padding-bottom: 7rem;
+    }
+}
