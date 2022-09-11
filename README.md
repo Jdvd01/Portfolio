@@ -1,5 +1,5 @@
 # Portfolio.
-## José Velásquez.
+### José Velásquez.
 
 This Portfolio is a personal project to introduce myself to the IT world and show my skills, both in the application and its functionalities.
 
