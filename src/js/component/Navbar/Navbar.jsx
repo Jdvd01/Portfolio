@@ -3,10 +3,14 @@ import React, { useState } from "react";
 import "./Navbar.css"
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 export const Navbar = () => {
 	const [scrolling, setScrolling] = useState(true)
 	const [position, setPosition] = useState()
 	const [isClicked, setIsClicked] = useState(false)
+
+    const [t, i18next] = useTranslation("navbar")
 
 	const isScroll = (position) => {
 		if (window.scrollY < position || window.scrollY == 0) {
@@ -50,11 +54,11 @@ export const Navbar = () => {
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div className="navbar-nav text-start">
-						<Link className="nav-link" to={"/"}><span className="numList">01.</span> Sobre mi</Link>
-						<Link className="nav-link" to={"/skills"}><span className="numList">02.</span> Habilidades</Link>
-						<Link className="nav-link" to={"/projects"}><span className="numList">03.</span> Proyectos</Link>
-						<Link className="nav-link" to={"/work"}><span className="numList">04.</span> Trabajo</Link>
-						<Link className="nav-link" to={"/contact"}><span className="numList">05.</span> Contacto</Link>
+						<Link className="nav-link" to={"/"}><span className="numList">01.</span> {t("menu.about")}</Link>
+						<Link className="nav-link" to={"/skills"}><span className="numList">02.</span> {t("menu.skills")}</Link>
+						<Link className="nav-link" to={"/projects"}><span className="numList">03.</span> {t("menu.projects")}</Link>
+						<Link className="nav-link" to={"/work"}><span className="numList">04.</span> {t("menu.work")}</Link>
+						<Link className="nav-link" to={"/contact"}><span className="numList">05.</span> {t("menu.contact")}</Link>
 					</div>
 				</div>
 			</div>

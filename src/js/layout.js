@@ -34,11 +34,17 @@ import contact_en from "../Translations/en/contact.json"
 // Work Translation
 import work_es from "../Translations/es/work.json"
 import work_en from "../Translations/en/work.json"
+// Navbar Translation
+import navbar_es from "../Translations/es/navbar.json"
+import navbar_en from "../Translations/en/navbar.json"
+// Footer Translation
+import footer_es from "../Translations/es/footer.json"
+import footer_en from "../Translations/en/footer.json"
 
 
 i18next.init({
 	interpolation: { escapeValue: false },
-	lng: "es",
+	lng: "en",
 	resources: {
 		es: {
 			about: about_es,
@@ -46,7 +52,9 @@ i18next.init({
 			projects: projects_es,
 			card: card_es,
 			contact: contact_es,
-			work: work_es
+			work: work_es,
+			navbar: navbar_es,
+			footer: footer_es
 		},
 		en: {
 			about: about_en,
@@ -54,7 +62,9 @@ i18next.init({
 			projects: projects_en,
 			card: card_en,
 			contact: contact_en,
-			work: work_en
+			work: work_en,
+			navbar: navbar_en,
+			footer: footer_en
 		}
 	}
 })
