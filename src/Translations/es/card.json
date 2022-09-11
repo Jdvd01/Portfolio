@@ -4,6 +4,7 @@
     },
     "project": {
         "repository": "Repositorio",
-        "web": "Sitio web"
+        "web": "Sitio web",
+        "tech": "Tecnologias usadas:"
     }
 }

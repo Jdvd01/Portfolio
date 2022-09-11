@@ -43,7 +43,7 @@ const Card = (props) => {
                         </p>
 
                         <h5>
-                            Tecnologias usadas:
+                            {t("project.tech")}
                         </h5>
                         <div className='row row-tech'>
 
