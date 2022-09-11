@@ -8,32 +8,35 @@ import "./Work.css"
 import Four_Geeks from "../../../imgs/Work/4Geeks_logo.png"
 import Farmatodo from "../../../imgs/Work/Farmatodo.png"
 
+import { useTranslation } from "react-i18next";
+
 const Work = () => {
+    const [t, i18next] = useTranslation("work")
 
     const professionalExperience = [
         {
             img: Farmatodo,
-            alt: "Logo Farmatodo",
+            alt: t("farmatodo.alt"),
             title: "Farmatodo C.A.",
-            time: "Noviembre 2018 - Abril 2021",
-            charge: "Asistente de piso de ventas",
+            time: t("farmatodo.time"),
+            charge: t("farmatodo.charge"),
             description: [
-                "Mantener la tienda completamente abastecida.",
-                "Mantenerme al corriente de la información sobre los productos.",
-                "Atención al cliente."
+                t("farmatodo.description.first"),
+                t("farmatodo.description.second"),
+                t("farmatodo.description.third")
             ],
             button_url: "https://www.farmatodo.com.ve/",
         },
         {
             img: Four_Geeks,
-            alt: "Logo 4Geeks Academy",
+            alt: t("4Geeks.alt"),
             title: "4Geeks Academy",
-            time: "Junio 2022 - Presente",
-            charge: "Asistente del profesor",
+            time: t("4Geeks.time"),
+            charge: t("4Geeks.charge"),
             description: [
-                "Corrección de proyectos de los alumnos.",
-                "Ayudar a los alumnos a adaptarse y aprender.",
-                "Apoyar a los alumnos en el proceso de aprendizaje."
+                t("4Geeks.description.first"),
+                t("4Geeks.description.second"),
+                t("4Geeks.description.third")
             ],
             button_url: "https://4geeksacademy.com/",
         }
@@ -45,7 +48,7 @@ const Work = () => {
                 <title>Work</title>
             </Helmet>
             <div className="work-container container">
-                <h1 className='work-header'><i className="fas fa-briefcase"></i> Experiencia profesional:</h1>
+                <h1 className='work-header'><i className="fas fa-briefcase"></i> {t("title")}:</h1>
                 <div className='row'>
                     {professionalExperience.map((item, index) => {
                         const { alt, description, img, button_url, title, time, charge } = item
@@ -67,7 +70,6 @@ const Work = () => {
                         )
                     })}
                 </div>
-
             </div>
         </>
     );

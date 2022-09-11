@@ -1,16 +1,18 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			language: "spanish"
+			language: "es"
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
-			changeLanguage: (newLanguage) => {
+			newLanguage: () => {
 				const store = getStore()
-				setStore({
-					...store,
-					language: newLanguage
-				})
+				if(store.language == "es"){
+					setStore({ language: "en" })
+				} else {
+					setStore({ language: "es" })
+				}
+				return store.language
 			}
 		}
 	};

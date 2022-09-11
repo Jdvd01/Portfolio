@@ -1,0 +1,10 @@
+{
+    "work": {
+        "web": "Sitio web"
+    },
+    "project": {
+        "repository": "Repositorio",
+        "web": "Sitio web",
+        "tech": "Tecnologías usadas:"
+    }
+}

@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from "prop-types"
 import "./Card.css"
-import SQLAlchemy from '../Icons/Backend/SqlAlchemy.jsx';
+
+import { useTranslation } from "react-i18next";
 
 const Card = (props) => {
+    const [t, i18next] = useTranslation("card")
+
     return (
         <>
             {props.section == "work" ? (
@@ -22,7 +25,7 @@ const Card = (props) => {
                             - {props.description[1]} <br />
                             - {props.description[2]}
                         </p>
-                        <a href={props.button_url} target={"_blank"} className="btn cardButton">Sitio web</a>
+                        <a href={props.button_url} target={"_blank"} className="btn cardButton">{t("work.web")}</a>
                     </div>
                 </div>
 
@@ -40,7 +43,7 @@ const Card = (props) => {
                         </p>
 
                         <h5>
-                            Tecnologias usadas:
+                            {t("project.tech")}
                         </h5>
                         <div className='row row-tech'>
 
@@ -54,9 +57,9 @@ const Card = (props) => {
                         </div>
 
                         <div className='anchors'>
-                            <a href={props.button_url} target={"_blank"} className="btn cardButton">Repositorio</a>
+                            <a href={props.button_url} target={"_blank"} className="btn cardButton">{t("project.repository")}</a>
                             {props.deploy_url &&
-                                <a href={props.deploy_url} target={"_blank"} className="btn cardButton">Sitio web</a>
+                                <a href={props.deploy_url} target={"_blank"} className="btn cardButton">{t("project.web")}</a>
                             }
                         </div>
                     </div>

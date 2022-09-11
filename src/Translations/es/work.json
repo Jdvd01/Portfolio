@@ -1,0 +1,23 @@
+{
+    "title": "Experiencia profesional",
+    "farmatodo": {
+        "alt": "Logo farmatodo",
+        "time": "Noviembre 2018 - Abril 2021",
+        "charge": "Asistente de piso de ventas",
+        "description": {
+            "first": "Mantener la tienda completamente abastecida.",
+            "second": "Mantenerme al corriente de la información sobre los productos.",
+            "third": "Atención al cliente."
+        }
+    },
+    "4Geeks": {
+        "alt": "Logo 4Geeks Academy",
+        "time": "Junio 2022 - Presente",
+        "charge": "Asistente del profesor",
+        "description": {
+            "first": "Corrección de proyectos de los alumnos.",
+            "second": "Ayudar a los alumnos a adaptarse y aprender.",
+            "third": "Apoyar a los alumnos en el proceso de aprendizaje."
+        }
+    } 
+}
