@@ -1,26 +1,51 @@
 footer{
-    background-color: black;
-    color: white;
+    background-color: #0A192F;
+    color: #8892B0;
     position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    animation: fadeFooter 1s ease both;
 }
+/* Footer anchors */
 footer a{
     text-decoration: none;
-    color: white;
+    color: #8892B0;
+
 }
+footer a:hover{
+    color: #53D3B9;
+}
+/* Paragraph */
 footer p{
     margin: 0;
 }
 hr{
-    margin: 1em auto;
+    margin: 0.5em auto;
     width: 50%;
 }
-.iconos{
-    display: flex;
-    justify-content: center;
+.icons{
     font-size: 1.5em;
+}
+.icons a i:hover{
+    transform: scale(1.2);
+}
+
+@keyframes fadeFooter {
+    0% {bottom: -7em; opacity: 0;}
+    100% {bottom: 0; opacity: 1;}
+}
+
+
+@media (max-width: 575px){
+    .icons{
+        gap: 0.4rem;
+    }
+}
+
+.react-logo{
+    display: inline-block;
+    width: 20px;
 }

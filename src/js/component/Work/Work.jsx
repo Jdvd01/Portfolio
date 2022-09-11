@@ -1,0 +1,76 @@
+import React from 'react';
+import Card from '../Card/Card.jsx';
+import {Helmet} from "react-helmet";
+
+import "./Work.css"
+
+// Work images
+import Four_Geeks from "../../../imgs/Work/4Geeks_logo.png"
+import Farmatodo from "../../../imgs/Work/Farmatodo.png"
+
+const Work = () => {
+
+    const professionalExperience = [
+        {
+            img: Farmatodo,
+            alt: "Logo Farmatodo",
+            title: "Farmatodo C.A.",
+            time: "Noviembre 2018 - Abril 2021",
+            charge: "Asistente de piso de ventas",
+            description: [
+                "Mantener la tienda completamente abastecida.",
+                "Mantenerme al corriente de la información sobre los productos.",
+                "Atención al cliente."
+            ],
+            button_url: "https://www.farmatodo.com.ve/",
+        },
+        {
+            img: Four_Geeks,
+            alt: "Logo 4Geeks Academy",
+            title: "4Geeks Academy",
+            time: "Junio 2022 - Presente",
+            charge: "Asistente del profesor",
+            description: [
+                "Corrección de proyectos de los alumnos.",
+                "Ayudar a los alumnos a adaptarse y aprender.",
+                "Apoyar a los alumnos en el proceso de aprendizaje."
+            ],
+            button_url: "https://4geeksacademy.com/",
+        }
+    ]
+
+    return (
+        <>
+            <Helmet>
+                <title>Work</title>
+            </Helmet>
+            <div className="work-container container">
+                <h1 className='work-header'><i className="fas fa-briefcase"></i> Experiencia profesional:</h1>
+                <div className='row'>
+                    {professionalExperience.map((item, index) => {
+                        const { alt, description, img, button_url, title, time, charge } = item
+                        return (
+                            <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-6 card-container">
+                                <Card
+                                    key={index}
+                                    img={img}
+                                    alt={alt}
+                                    title={title}
+                                    time={time}
+                                    charge={charge}
+                                    description={description}
+                                    button_url={button_url}
+                                    section="work"
+                                />
+                            </div>
+
+                        )
+                    })}
+                </div>
+
+            </div>
+        </>
+    );
+}
+
+export default Work;

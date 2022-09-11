@@ -1,0 +1,89 @@
+.card{
+    width: 21rem;
+    background: transparent;
+    border: 1px solid #53D3B9;
+    z-index: -1;
+}
+.project-card{
+    width: 30rem;
+}
+.logo-container{
+    height: 13rem;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.cardButton{
+    color: #8892B0;
+    border: 1px solid #53D3B9;
+}
+.cardButton:hover{
+    color: #53D3B9;
+}
+.card-text{
+    color: #CCD6F6;
+}
+h6{
+    color: #8892B0;
+    margin-bottom: 0.2rem;
+
+}
+.card-body{
+    padding: 0.8rem;
+}
+.project-img img{
+    border-radius: 0 0 14px 14px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.anchors{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-tech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
+}
+.row-tech{
+    display: flex;
+    gap: 1rem 0;
+}
+@media (min-width: 1200px){
+    .padding-first > .card-body > .anchors{
+        padding-top: 2rem;
+    }
+    .padding-third > .card-body > .anchors{
+        padding-top: 3.6rem;
+    }
+}
+/* Large screen */
+@media (min-width: 992px) and (max-width: 1199px){
+    .padding-first > .card-body > .anchors{
+        padding-top: 2rem;
+    }
+    .padding-third > .card-body > .anchors{
+        padding-top: 3.8rem;
+    }
+}
+/* Medium screen */
+@media (min-width: 768px) and (max-width: 991px){
+    .padding-first > .card-body > .anchors{
+        padding-top: 2rem;
+    }
+    .padding-third > .card-body > .anchors{
+        padding-top: 1rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    
+}
+@media (max-width: 575px){
+    .project-card{
+        width: 90%;
+    }
+}

@@ -1,0 +1,10 @@
+.projects-container{
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+}
+.projects-container-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
