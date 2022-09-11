@@ -16,30 +16,45 @@ import Contact from "./component/Contact/Contact.jsx";
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 
+// About translation
 import about_es from "../Translations/es/about.json"
 import about_en from "../Translations/en/about.json"
+// Skills Translation
 import skills_es from "../Translations/es/skills.json"
 import skills_en from "../Translations/en/skills.json"
+// Projects Translation
 import projects_es from "../Translations/es/projects.json"
 import projects_en from "../Translations/en/projects.json"
+// Card Translation
 import card_es from "../Translations/es/card.json"
 import card_en from "../Translations/en/card.json"
+// Contact Translation
+import contact_es from "../Translations/es/contact.json"
+import contact_en from "../Translations/en/contact.json"
+// Work Translation
+import work_es from "../Translations/es/work.json"
+import work_en from "../Translations/en/work.json"
+
 
 i18next.init({
 	interpolation: { escapeValue: false },
-	lng: "en",
+	lng: "es",
 	resources: {
 		es: {
 			about: about_es,
 			skills: skills_es,
 			projects: projects_es,
-			card: card_es
+			card: card_es,
+			contact: contact_es,
+			work: work_es
 		},
 		en: {
 			about: about_en,
 			skills: skills_en,
 			projects: projects_en,
-			card: card_en
+			card: card_en,
+			contact: contact_en,
+			work: work_en
 		}
 	}
 })

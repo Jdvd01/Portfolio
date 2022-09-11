@@ -1,0 +1,23 @@
+{
+    "title": "Professional experience",
+    "farmatodo": {
+        "alt": "Farmatodo logo",
+        "time": "November 2018 - April 2021",
+        "charge": "Salesfloor assistant",
+        "description": {
+            "first": "Keeping the store fully stocked.",
+            "second": "Keeping me up to date with product information.",
+            "third": "Customer service."
+        }
+    },
+    "4Geeks": {
+        "alt": "Logo 4Geeks Academy",
+        "time": "June 2022 - Present",
+        "charge": "Teacher assistant",
+        "description": {
+            "first": "Correction and feedback of students' projects.",
+            "second": "Helping students to adapt and learn.",
+            "third": "Support students in the learning process."
+        }
+    } 
+}

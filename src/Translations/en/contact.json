@@ -1,0 +1,11 @@
+{
+    "title": "Contact me:",
+    "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "error": "The email was not sent, try again.",
+        "button": "Send email"
+    }
+    
+}
