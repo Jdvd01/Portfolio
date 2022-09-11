@@ -5,8 +5,11 @@
     border-top: 0;
     z-index: -1;
 }
+.project-card{
+    width: 30rem;
+}
 .logo-container{
-    height: 14rem;
+    height: 13rem;
 }
 .card img{
     width: 100%;
@@ -23,9 +26,28 @@
 .card-text{
     color: #CCD6F6;
 }
+h6{
+    color: #8892B0;
+    margin-bottom: 0.2rem;
 
-
+}
+.card-body{
+    padding: 0.8rem;
+}
 
 .project-img img{
     border-radius: 0 0 14px 14px;
+}
+.anchors{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-tech{
+    width: 59px;
+}
+
+@media (max-width: 575px){
+    .project-card{
+        width: 90%;
+    }
 }
