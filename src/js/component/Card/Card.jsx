@@ -13,6 +13,8 @@ const Card = (props) => {
                 <div className="card-body">
                     <h5 className="card-title text-center">{props.title}</h5>
                     <hr />
+                    <h6>{props.charge}</h6>
+                    <h6>{props.time}</h6>
                     <p className="card-text">
                         - {props.description[0]} <br />
                         - {props.description[1]} <br />

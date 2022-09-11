@@ -14,6 +14,8 @@ const Work = () => {
             img: Farmatodo,
             alt: "Logo Farmatodo",
             title: "Farmatodo C.A.",
+            time: "Noviembre 2018 - Abril 2021",
+            charge: "Asistente de piso de ventas",
             description: [
                 "Mantener la tienda completamente abastecida.",
                 "Mantenerme al corriente de la información sobre los productos.",
@@ -25,6 +27,8 @@ const Work = () => {
             img: Four_Geeks,
             alt: "Logo 4Geeks Academy",
             title: "4Geeks Academy",
+            time: "Junio 2022 - Presente",
+            charge: "Asistente del profesor",
             description: [
                 "Corrección de proyectos de los alumnos.",
                 "Ayudar a los alumnos a adaptarse y aprender.",
@@ -40,12 +44,13 @@ const Work = () => {
                 <h1 className='work-header'><i className="fas fa-briefcase"></i> Experiencia profesional:</h1>
                 <div className='row'>
                     {professionalExperience.map((item, index) => {
-                        const { alt, description, img, button_url, title } = item
+                        const { alt, description, img, button_url, title, time, charge } = item
                         return (
                             <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-6 card-container">
                                 <Card
                                     key={index}
                                     alt={alt}
+                                    time={time}
                                     description={description}
                                     img={img}
                                     button_url={button_url}
@@ -63,4 +68,4 @@ const Work = () => {
     );
 }
 
-export default Work; Work
+export default Work;

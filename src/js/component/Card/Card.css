@@ -6,7 +6,7 @@
     z-index: -1;
 }
 .logo-container{
-    height: 14rem;
+    height: 13rem;
 }
 .card img{
     width: 100%;
@@ -23,8 +23,14 @@
 .card-text{
     color: #CCD6F6;
 }
+h6{
+    color: #8892B0;
+    margin-bottom: 0.2rem;
 
-
+}
+.card-body{
+    padding: 0.8rem;
+}
 
 .project-img img{
     border-radius: 0 0 14px 14px;

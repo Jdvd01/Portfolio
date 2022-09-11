@@ -7,7 +7,7 @@
 /* General container */
 .about-me{
     margin: 0 5rem 0 5rem;
-    padding-top: 5rem;
+    padding: 5rem 0 6rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@ img{
 }
 
 .more-about{
-    margin: 1.5rem 0 7rem 0;
+    margin-top: 0.5rem;
 }
 
 .info-container h2, ul li{
@@ -44,14 +44,16 @@ img{
 .info-container h3, .info-container p{
     color: #8892B0;
 }
-.more-about >div>ul{
+
+ul{
+    margin: 0;
     list-style: none;
 }
 .numList{
     color: #53D3B9;
 }
 
-.img-container, .info-container, .languages, .hobbies{
+.img-container, .info-container, .languages, .hobbies, .last-p{
     position: relative;
     opacity: 0;
     animation: fadeAbout 0.5s ease both;
@@ -68,9 +70,27 @@ img{
 .hobbies{
     animation-delay: 1600ms;
 }
+.last-p{
+    animation-delay: 2000ms;
+}
 @keyframes fadeAbout {
     0% {bottom: -10em; opacity: 0;}
     100% {bottom: 0; opacity: 1;}
+}
+
+.last-p{
+    color: #CCD6F6;
+    font-size: 1.2rem;
+}
+.hand-up{
+    padding-left: 0.5rem;
+    display: inline-block;
+    animation: handUp 1s ease infinite;
+}
+@keyframes handUp {
+    0% {transform: translateY(-0.5rem);}
+    50% {transform: translateY(0);}
+    100% {transform: translateY(-0.5rem);}
 }
 
 /* XL Screen */
@@ -90,6 +110,9 @@ img{
 }
 /* Large screen */
 @media (min-width: 992px) and (max-width: 1199px){
+    .about-me{
+        padding: 4.5rem 0 5rem 0;
+    }
     .info-container h1{
         font-size: 1.3rem;
     }
@@ -131,6 +154,9 @@ img{
     .info-container p{ 
         font-size: 1rem
     }
+    .last-p{
+        margin-top: 1rem;
+    }
 }
 @media (max-width: 575px){
     .img-container{
@@ -147,5 +173,8 @@ img{
     }
     .info-container p{ 
         font-size: 1rem
+    }
+    .last-p{
+        margin-top: 1rem;
     }
 }

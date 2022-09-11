@@ -27,7 +27,7 @@ const Contact = () => {
 
     return (
         <div className='contact container'>
-            <h1 className='mail-header container'><i className="fa-regular fa-envelope"></i> Dejame un mail:</h1>
+            <h1 className='mail-header container'><i className="fa-regular fa-envelope"></i> Contacta conmigo:</h1>
             <form ref={form} id="form" className='col-12 col-sm-12 col-md-8 col-lg-8 p-0 m-0' onSubmit={sendEmail}>
                 <div className="field">
                     <label htmlFor="from_name">Nombre:</label>
