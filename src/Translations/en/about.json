@@ -1,0 +1,31 @@
+{
+    "header": {
+        "one-first": "Hi",
+        "one-second": "my name is",
+        "name": "José Velásquez.",
+        "profession": "I'm Full Stack Web Developer."
+    },
+    "description": "Since I was a child, I have always been interested in the technological world, in elementary school I learned the basics of HTML and in college I studied the basics of C++ and Java, and now I dedicate myself to web development.",
+    "more": {
+        "languages": {
+            "title": "Languages",
+            "first": "Spanish: Native.",
+            "second": "English.",
+            "list": {
+                "reading": "Reading Comprehension (Medium).",
+                "listening": "Listening (Medium).",
+                "writing": "Writing (Medium).",
+                "conversational": "Conversational (Basic)."
+            }
+        },
+        "hobbies": {
+            "title": "Hobbies.",
+            "list": {
+                "first": "Play video games.",
+                "second": "Read books.",
+                "third": "Programming."
+            }
+        },
+        "description": "To learn more about my skills, projects and if you would like to contact me, I invite you to visit the links above."
+    }
+}
