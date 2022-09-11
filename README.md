@@ -1,6 +1,9 @@
-# WebApp boilerplate with React JS
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
+# Portfolio.
+## José Velásquez.
 
+This Portfolio is a personal project to introduce myself to the IT world and show my skills, both in the application and its functionalities.
+
+> Any kind of collaboration is welcome.
 
 ### Requirements:
 - Make sure you are using node version 10
@@ -18,3 +21,7 @@ $ cp .env.example .env
 ```bash
 $ npm run start
 ```
+
+> PD: If u want to use the Contact form locally, you first need the required variables.
+
+> You can find it at https://www.emailjs.com/ with an account
