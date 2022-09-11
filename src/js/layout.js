@@ -27,7 +27,7 @@ import card_en from "../Translations/en/card.json"
 
 i18next.init({
 	interpolation: { escapeValue: false },
-	lng: "es",
+	lng: "en",
 	resources: {
 		es: {
 			about: about_es,
