@@ -9,7 +9,7 @@ import usa from "../../../imgs/Languages/Usa.png"
 import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
-	const {actions, store} = useContext(Context)
+	const { actions, store } = useContext(Context)
 	const [scrolling, setScrolling] = useState(true)
 	const [position, setPosition] = useState()
 	const [isClicked, setIsClicked] = useState(false)
@@ -36,16 +36,16 @@ export const Navbar = () => {
 					<Link className="navbar-brand" to={"/"}>
 						<img src="https://avatars.githubusercontent.com/u/97990022?s=400&u=198211576ca589ce60e75a85d07ce4454bba5e52&v=4" alt="Imagen de perfil" />
 					</Link>
-					<div 
-							className="languageButton"
-							onClick={() => i18next.changeLanguage(actions.newLanguage())}
-						>
-							{store.language == "es" ? (
-								<img src={espana} className="flag"/>
-							) : (
-								<img src={usa} className="flag"/>
-							)}
-						</div>
+					<div
+						className="languageButton"
+						onClick={() => i18next.changeLanguage(actions.newLanguage())}
+					>
+						{store.language == "es" ? (
+							<img src={espana} className="flag" />
+						) : (
+							<img src={usa} className="flag" />
+						)}
+					</div>
 				</div>
 				<button className={`navbar-toggler navButton ${isClicked ? "close" : "open"}`}
 					type="button"

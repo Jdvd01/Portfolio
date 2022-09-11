@@ -4,7 +4,7 @@
         "name": "Nombre",
         "email": "Email",
         "message": "Mensaje",
-        "error": "No se envio el mail, intentalo de nuevo",
+        "error": "No se envió el email, inténtelo de nuevo",
         "button": "Enviar email"
     }
     
