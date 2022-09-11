@@ -10,9 +10,11 @@ const About = () => {
             <div className='col-xl-10 col-lg-8 col-md-9 col-sm-8 col-12 info-container'>
                 <h1>Hola <div className='hand'>👋🏽</div>, mi nombre es</h1>
                 <h2>José Velásquez.</h2>
-                <h3>Yo soy Desarrollador web full stack</h3>
+                <h3>Soy Desarrollador web full stack.</h3>
                 <p>
-                    Soy Desarrollador web full stack
+                    Desde pequeño siempre me ha interesado el mundo tecnologico, 
+                    en primaria aprendi lo basico de HTML y en la universidad estudie lo basico de C++ y Java,
+                    y ahora me dedico al desarrollo web ✌🏽😎.
                 </p>
             </div>
             <div className='row more-about'>
