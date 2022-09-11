@@ -49,7 +49,7 @@ const About = () => {
                 <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                     <p className='last-p'>
                         Para saber un poco mas sobre mis habilidades, 
-                        proyectos y quieres contactar conmigo, 
+                        proyectos y quisieras contactar conmigo, 
                         te invito a visitar los links de arriba 
                         <span className="hand-up">☝🏽</span> 
                     </p>

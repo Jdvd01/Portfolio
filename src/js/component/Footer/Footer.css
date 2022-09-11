@@ -44,3 +44,8 @@ hr{
         gap: 0.4rem;
     }
 }
+
+.react-logo{
+    display: inline-block;
+    width: 20px;
+}

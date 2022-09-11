@@ -2,12 +2,11 @@ import React from 'react';
 
 const ThunderClient = () => {
     return (
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-            width="80px" height="62px" viewBox="0 0 356.000000 304.000000"
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356.000000 304.000000"
             preserveAspectRatio="xMidYMid meet">
 
             <g transform="translate(0.000000,304.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none">
+                fill="#FFF" stroke="none">
                 <path d="M1680 2834 c-14 -2 -59 -9 -100 -15 -351 -51 -681 -290 -860 -622
        -90 -167 -134 -348 -134 -557 0 -317 109 -593 327 -826 225 -242 597 -391 918
        -370 322 20 580 136 799 356 186 187 295 409 336 681 65 443 -143 904 -520

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const RestApi = (props) => {
     return (
-        <svg x="0px" y="0px" viewBox="0 0 122.88 100.33" style={{ enableBackground: "new 0 0 122.88 100.33", width:"80px" }}>
+        <svg x="0px" y="0px" viewBox="0 0 122.88 100.33" style={{ enableBackground: "new 0 0 122.88 100.33" }}>
             <g>
                 <path
                     

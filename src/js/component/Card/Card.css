@@ -5,6 +5,9 @@
     border-top: 0;
     z-index: -1;
 }
+.project-card{
+    width: 30rem;
+}
 .logo-container{
     height: 13rem;
 }
@@ -34,4 +37,17 @@ h6{
 
 .project-img img{
     border-radius: 0 0 14px 14px;
+}
+.anchors{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-tech{
+    width: 59px;
+}
+
+@media (max-width: 575px){
+    .project-card{
+        width: 90%;
+    }
 }

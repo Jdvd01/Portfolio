@@ -49,12 +49,13 @@ const Work = () => {
                             <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-6 card-container">
                                 <Card
                                     key={index}
-                                    alt={alt}
-                                    time={time}
-                                    description={description}
                                     img={img}
-                                    button_url={button_url}
+                                    alt={alt}
                                     title={title}
+                                    time={time}
+                                    charge={charge}
+                                    description={description}
+                                    button_url={button_url}
                                     section="work"
                                 />
                             </div>
