@@ -7,7 +7,7 @@ const Problem_Solving = () => {
             preserveAspectRatio="xMidYMid meet">
 
             <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none">
+                fill="#0098FE" stroke="none">
                 <path d="M2220 4870 c-448 -55 -842 -269 -1122 -610 -119 -145 -226 -341 -288
 -529 -50 -150 -67 -235 -82 -399 -35 -387 81 -793 318 -1122 42 -58 87 -127
 100 -155 55 -117 54 -108 54 -925 l0 -756 23 -44 c16 -33 34 -51 67 -68 l44

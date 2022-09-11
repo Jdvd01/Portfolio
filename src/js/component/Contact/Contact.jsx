@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import {Helmet} from "react-helmet";
 import emailjs from "@emailjs/browser"
 import "./Contact.css"
 
@@ -27,6 +28,9 @@ const Contact = () => {
 
     return (
         <div className='contact container'>
+            <Helmet>
+                <title>Contact</title>
+            </Helmet>
             <h1 className='mail-header container'><i className="fa-regular fa-envelope"></i> Contacta conmigo:</h1>
             <form ref={form} id="form" className='col-12 col-sm-12 col-md-8 col-lg-8 p-0 m-0' onSubmit={sendEmail}>
                 <div className="field">

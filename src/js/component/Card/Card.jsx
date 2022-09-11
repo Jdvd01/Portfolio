@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from "prop-types"
 import "./Card.css"
+import SQLAlchemy from '../Icons/Backend/SqlAlchemy.jsx';
 
 const Card = (props) => {
     return (
         <>
             {props.section == "work" ? (
+
                 <div className="card">
                     <div className='logo-container'>
                         <img src={props.img} className="card-img-top" alt={props.alt} />
@@ -23,8 +25,10 @@ const Card = (props) => {
                         <a href={props.button_url} target={"_blank"} className="btn cardButton">Sitio web</a>
                     </div>
                 </div>
+
             ) : props.section == "projects" ? (
-                <div className="project-card card">
+
+                <div className={`project-card card ${props.index == 0 ? "padding-first" : props.index == 2 ? "padding-third" : ""}`}>
                     <div className='logo-container project-img'>
                         <img src={props.img} className="card-img-top" alt={props.alt} />
                     </div>
@@ -38,7 +42,7 @@ const Card = (props) => {
                         <h5>
                             Tecnologias usadas:
                         </h5>
-                        <div className='row mb-3 mt-2'>
+                        <div className='row row-tech'>
 
                             {props.technologies?.map((technology, index) => {
                                 return (
@@ -57,8 +61,9 @@ const Card = (props) => {
                         </div>
                     </div>
                 </div>
-                
+
             ) : (
+
                 <div className="card" aria-hidden="true">
                     <img src="..." className="card-img-top" alt="..." />
                     <div className="card-body">

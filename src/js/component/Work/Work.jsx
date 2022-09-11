@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card.jsx';
+import {Helmet} from "react-helmet";
 
 import "./Work.css"
 
@@ -40,6 +41,9 @@ const Work = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Work</title>
+            </Helmet>
             <div className="work-container container">
                 <h1 className='work-header'><i className="fas fa-briefcase"></i> Experiencia profesional:</h1>
                 <div className='row'>
