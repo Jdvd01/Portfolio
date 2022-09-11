@@ -29,30 +29,52 @@ import Github from "../Icons/Tools/Github.jsx"
 import VS_Code from "../Icons/Tools/VsCode.jsx"
 import SCRUM from "../Icons/Tools/Scrum.jsx"
 import ThunderClient from "../Icons/Tools/ThunderClient.jsx"
+import VsCode from '../Icons/Tools/VsCode.jsx';
 
 const Projects = () => {
 
     const myProyects = [
         {
-            img: Star_Wars,
-            alt: "Star wars project",
-            title: "Star wars blog",
-            description: "Blog de Star Wars hecho con React",
-            button_url: "https://github.com/Jdvd01/star-wars-blog",
-            deploy_url: "https://star-wars-blog-nu.vercel.app/",
-            technologies: [<Html />, <Css />, <BootStrap />, 
-            <JavaScript />, <ReactSvg />, <Flux />, <RestApi color="FFFFFF"/>, <ThunderClient />]
-        },
-        {
             img: Buzzr_web,
             alt: "Buzzr project",
-            title: "BuzzrApp",
-            description: "Proyecto final para 4Geeks Academy, BuzzrApp es una aplicacion de mensajeria hecha con Socket.IO",
+            title: "BuzzrApp Web",
+            description: "Frontend del proyecto final para 4Geeks Academy, BuzzrApp es una aplicacion de mensajeria hecha con Socket.IO",
             button_url: "https://github.com/Jdvd01/buzzr-web",
             deploy_url: null,
             technologies: [<Html />, <Css />, <BootStrap />, 
             <JavaScript />, <ReactSvg />, <Flux />, <SocketIO />]
+        },
+        {
+            img: "https://starwars-visualguide.com/assets/img/placeholder.jpg",
+            alt: "Placeholder",
+            title: "BuzzrApp Api",
+            description: "Backend del proyecto final para 4Geeks Academy, BuzzrApp es una aplicacion de mensajeria hecha con Socket.IO",
+            button_url: "https://github.com/Jdvd01/buzzr-api",
+            deploy_url: null,
+            technologies: [<Python />, <Flask />, <Sql />, 
+            <ThunderClient />, <VsCode />, <SocketIO />, <SqlAlchemy /> ]
+        },
+        {
+            img: Star_Wars,
+            alt: "Star wars project",
+            title: "Star wars blog",
+            description: "Blog de Star Wars hecho con React, Context, haciendo uso de la arquitectura Flux",
+            button_url: "https://github.com/Jdvd01/star-wars-blog",
+            deploy_url: "https://star-wars-blog-nu.vercel.app/",
+            technologies: [<Html />, <Css />, <BootStrap />, 
+            <JavaScript />, <ReactSvg />, <Flux />, <RestApi color="0098FE"/>]
+        },
+        {
+            img: "https://starwars-visualguide.com/assets/img/placeholder.jpg",
+            alt: "Star wars img",
+            title: "Star wars api",
+            description: "Api de Star wars consumiendo swapi.tech",
+            button_url: "https://github.com/Jdvd01/star-wars-api",
+            deploy_url: null,
+            technologies: [<Python />, <Flask />, <ThunderClient />, <RestApi color="0098FE"/>,
+            , <Sql />, <SqlAlchemy />]
         }
+        
     ]
 
     return (
@@ -61,9 +83,10 @@ const Projects = () => {
                 {myProyects.map((project, index) => {
                     const {img, alt, title, description, button_url, deploy_url, technologies} = project
                     return(
-                        <div key={index} className="col-12 col-sm-12 col-md-12 col-lg-6 card-container mb-4">
+                        <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-4 card-container mb-4">
                             <Card 
-                            key={index} 
+                            key={index}
+                            index={index}
                             img={img}
                             alt={alt}
                             title={title}
