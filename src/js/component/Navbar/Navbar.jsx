@@ -41,9 +41,9 @@ export const Navbar = () => {
 						onClick={() => i18next.changeLanguage(actions.newLanguage())}
 					>
 						{store.language == "es" ? (
-							<img src={espana} className="flag" />
-						) : (
 							<img src={usa} className="flag" />
+						) : (
+							<img src={espana} className="flag" />
 						)}
 					</div>
 				</div>
