@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 
 import "./Projects.css"
 import Card from '../Card/Card.jsx';
@@ -24,10 +25,6 @@ import SqlAlchemy from "../Icons/Backend/SqlAlchemy.jsx"
 import RestApi from "../Icons/Backend/RestApi.jsx"
 
 // Tools Svg
-import Git from "../Icons/Tools/Git.jsx"
-import Github from "../Icons/Tools/Github.jsx"
-import VS_Code from "../Icons/Tools/VsCode.jsx"
-import SCRUM from "../Icons/Tools/Scrum.jsx"
 import ThunderClient from "../Icons/Tools/ThunderClient.jsx"
 import VsCode from '../Icons/Tools/VsCode.jsx';
 
@@ -79,6 +76,9 @@ const Projects = () => {
 
     return (
         <div className='projects-container container'>
+            <Helmet>
+                <title>Projects</title>
+            </Helmet>
             <div className="row projects-container-row">
                 {myProyects.map((project, index) => {
                     const {img, alt, title, description, button_url, deploy_url, technologies} = project
