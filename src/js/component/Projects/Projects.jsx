@@ -28,14 +28,18 @@ import RestApi from "../Icons/Backend/RestApi.jsx"
 import ThunderClient from "../Icons/Tools/ThunderClient.jsx"
 import VsCode from '../Icons/Tools/VsCode.jsx';
 
+import { useTranslation } from "react-i18next";
+
+
 const Projects = () => {
+    const [t, i18next] = useTranslation("projects")
 
     const myProyects = [
         {
             img: Buzzr_web,
             alt: "Buzzr project",
             title: "BuzzrApp Web",
-            description: "Frontend del proyecto final para 4Geeks Academy, BuzzrApp es una aplicacion de mensajeria hecha con Socket.IO",
+            description: t("cards.first.description"),
             button_url: "https://github.com/Jdvd01/buzzr-web",
             deploy_url: null,
             technologies: [<Html />, <Css />, <BootStrap />, 
@@ -45,7 +49,7 @@ const Projects = () => {
             img: "https://starwars-visualguide.com/assets/img/placeholder.jpg",
             alt: "Placeholder",
             title: "BuzzrApp Api",
-            description: "Backend del proyecto final para 4Geeks Academy, BuzzrApp es una aplicacion de mensajeria hecha con Socket.IO",
+            description: t("cards.second.description"),
             button_url: "https://github.com/Jdvd01/buzzr-api",
             deploy_url: null,
             technologies: [<Python />, <Flask />, <Sql />, 
@@ -55,7 +59,7 @@ const Projects = () => {
             img: Star_Wars,
             alt: "Star wars project",
             title: "Star wars blog",
-            description: "Blog de Star Wars hecho con React, Context, haciendo uso de la arquitectura Flux",
+            description: t("cards.third.description"),
             button_url: "https://github.com/Jdvd01/star-wars-blog",
             deploy_url: "https://star-wars-blog-nu.vercel.app/",
             technologies: [<Html />, <Css />, <BootStrap />, 
@@ -65,7 +69,7 @@ const Projects = () => {
             img: "https://starwars-visualguide.com/assets/img/placeholder.jpg",
             alt: "Star wars img",
             title: "Star wars api",
-            description: "Api de Star wars consumiendo swapi.tech",
+            description: t("cards.fourth.description"),
             button_url: "https://github.com/Jdvd01/star-wars-api",
             deploy_url: null,
             technologies: [<Python />, <Flask />, <ThunderClient />, <RestApi color="0098FE"/>,

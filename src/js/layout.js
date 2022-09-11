@@ -18,16 +18,28 @@ import i18next from "i18next";
 
 import about_es from "../Translations/es/about.json"
 import about_en from "../Translations/en/about.json"
+import skills_es from "../Translations/es/skills.json"
+import skills_en from "../Translations/en/skills.json"
+import projects_es from "../Translations/es/projects.json"
+import projects_en from "../Translations/en/projects.json"
+import card_es from "../Translations/es/card.json"
+import card_en from "../Translations/en/card.json"
 
 i18next.init({
 	interpolation: { escapeValue: false },
 	lng: "es",
 	resources: {
 		es: {
-			about: about_es
+			about: about_es,
+			skills: skills_es,
+			projects: projects_es,
+			card: card_es
 		},
 		en: {
-			about: about_en
+			about: about_en,
+			skills: skills_en,
+			projects: projects_en,
+			card: card_en
 		}
 	}
 })

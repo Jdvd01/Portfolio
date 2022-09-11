@@ -1,0 +1,16 @@
+{
+    "cards": {
+        "first": {
+            "description": "Frontend del proyecto final para 4Geeks Academy, BuzzrApp es una aplicacion de mensajeria hecha con Socket.IO"
+        },
+        "second": {
+            "description": "Backend del proyecto final para 4Geeks Academy, BuzzrApp es una aplicacion de mensajeria hecha con Socket.IO"
+        },
+        "third": {
+            "description": "Blog de Star Wars hecho con React, Context, haciendo uso de la arquitectura Flux"
+        },
+        "fourth": {
+            "description": "Api de Star wars consumiendo swapi.tech"
+        }
+    }
+}

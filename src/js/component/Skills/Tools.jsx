@@ -7,11 +7,15 @@ import VS_Code from "../Icons/Tools/VsCode.jsx"
 import SCRUM from "../Icons/Tools/Scrum.jsx"
 import ThunderClient from "../Icons/Tools/ThunderClient.jsx"
 
+import { useTranslation } from "react-i18next";
+
 const Tools = () => {
+    const [t, i18next] = useTranslation("skills")
+
     return (
         <div className="tools-container col-sm-12 col-md-6 col-lg-6">
             <div className="row">
-                <h3 className='skills-title'>Herramientas</h3>
+                <h3 className='skills-title'>{t("header.tools")}</h3>
                 <div className="col-4 col-md-4 tool">
                     <div className="skill-icon">
                         <VS_Code />
