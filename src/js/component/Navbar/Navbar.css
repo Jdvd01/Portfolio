@@ -24,11 +24,16 @@
 }
 
 /* Logo, button, and anchors with animation */
-.navbar-brand, .navbar-toggler, .navbar-nav a, .flag, .scrolling{
+.navbar-brand, .navbar-toggler, .flag, .scrolling, .navbar-nav a{
     position: relative;
     opacity: 0;
     animation: fadeNavbar 0.5s ease both;
 }
+.show .navbar-nav a{
+    opacity: 1;
+    animation: none;
+}
+
 /* Animation delay for lasts links */
 .navbar-nav a:nth-child(2){
     animation-delay: 300ms;
@@ -65,13 +70,13 @@
     transition: all .5s;
     transform-origin: left;
 }
-.close div:first-child{
+.open div:first-child{
     transform: rotate(47deg);
 }
-.close div:nth-child(2){
+.open div:nth-child(2){
     opacity: 0;
 }
-.close div:last-child{
+.open div:last-child{
     transform: rotate(-47deg);
 }
 
