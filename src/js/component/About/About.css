@@ -92,7 +92,13 @@ ul{
     50% {transform: translateY(0);}
     100% {transform: translateY(-0.5rem);}
 }
-
+.english-anchor{
+    text-decoration: none;
+    color: #8892B0;
+}
+.english-anchor:hover{
+    color: #53D3B9;
+}
 /* XL Screen */
 @media (min-width: 1200px){
     .info-container h1{
