@@ -28,7 +28,7 @@ const About = () => {
                     <ul>
                         <li><span className="numList">01.</span> {t("more.languages.first")}</li>
                         <li>
-                            <span className="numList">02.</span> {t("more.languages.second")}
+                            <span className="numList">02.</span> {t("more.languages.second.title")}: <a className='english-anchor' href='https://www.efset.org/cert/fxWjod' target={"_blank"}> {t("more.languages.second.description")} </a> 
                         </li>
                     </ul>
                 </div>

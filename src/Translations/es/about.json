@@ -10,7 +10,10 @@
         "languages": {
             "title": "Idiomas",
             "first": "Español: Nativo.",
-            "second": "Ingles: (B2, Intermedio alto)"
+            "second": {
+                "title": "Inglés",
+                "description": "(B2, Intermedio alto)"
+            }
         },
         "hobbies": {
             "title": "Pasatiempos",
