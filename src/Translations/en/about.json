@@ -10,13 +10,7 @@
         "languages": {
             "title": "Languages",
             "first": "Spanish: Native.",
-            "second": "English.",
-            "list": {
-                "reading": "Reading Comprehension (Medium).",
-                "listening": "Listening (Medium).",
-                "writing": "Writing (Medium).",
-                "conversational": "Conversational (Basic)."
-            }
+            "second": "English: (B2, Upper Intermediate)"
         },
         "hobbies": {
             "title": "Hobbies.",
