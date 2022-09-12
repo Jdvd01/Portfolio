@@ -70,13 +70,13 @@
     transition: all .5s;
     transform-origin: left;
 }
-.close div:first-child{
+.open div:first-child{
     transform: rotate(47deg);
 }
-.close div:nth-child(2){
+.open div:nth-child(2){
     opacity: 0;
 }
-.close div:last-child{
+.open div:last-child{
     transform: rotate(-47deg);
 }
 

@@ -15,19 +15,6 @@ const Work = () => {
 
     const professionalExperience = [
         {
-            img: Farmatodo,
-            alt: t("farmatodo.alt"),
-            title: "Farmatodo C.A.",
-            time: t("farmatodo.time"),
-            charge: t("farmatodo.charge"),
-            description: [
-                t("farmatodo.description.first"),
-                t("farmatodo.description.second"),
-                t("farmatodo.description.third")
-            ],
-            button_url: "https://www.farmatodo.com.ve/",
-        },
-        {
             img: Four_Geeks,
             alt: t("4Geeks.alt"),
             title: "4Geeks Academy",
@@ -39,6 +26,19 @@ const Work = () => {
                 t("4Geeks.description.third")
             ],
             button_url: "https://4geeksacademy.com/",
+        },
+        {
+            img: Farmatodo,
+            alt: t("farmatodo.alt"),
+            title: "Farmatodo C.A.",
+            time: t("farmatodo.time"),
+            charge: t("farmatodo.charge"),
+            description: [
+                t("farmatodo.description.first"),
+                t("farmatodo.description.second"),
+                t("farmatodo.description.third")
+            ],
+            button_url: "https://www.farmatodo.com.ve/",
         }
     ]
 

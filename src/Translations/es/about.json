@@ -21,9 +21,9 @@
         "hobbies": {
             "title": "Pasatiempos",
             "list": {
-                "first": "Jugar a videojuegos.",
+                "first": "Programar.",
                 "second": "Leer libros.",
-                "third": "Programar."
+                "third": "Jugar a videojuegos."
             }
         },
         "description": "Para saber un poco más sobre mis habilidades, proyectos y quisieras contactar conmigo, te invito a visitar los links de arriba."

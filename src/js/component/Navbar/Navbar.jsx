@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../../store/appContext";
 import { Link } from "react-router-dom";
 import "./Navbar.css"
@@ -47,7 +47,7 @@ export const Navbar = () => {
 						)}
 					</div>
 				</div>
-				<button className={`navbar-toggler navButton ${isClicked ? "close" : "open"}`}
+				<button className={`navbar-toggler navButton ${isClicked ? "open" : "close"}`}
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarNavAltMarkup"
@@ -56,9 +56,9 @@ export const Navbar = () => {
 					aria-label="Toggle navigation"
 					onClick={() => setIsClicked((prev) => !prev)}
 				>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div className="button-bars"></div>
+					<div className="button-bars"></div>
+					<div className="button-bars"></div>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div className="navbar-nav text-start">

@@ -21,9 +21,9 @@
         "hobbies": {
             "title": "Hobbies.",
             "list": {
-                "first": "Play video games.",
+                "first": "Programming.",
                 "second": "Read books.",
-                "third": "Programming."
+                "third": "Play video games."
             }
         },
         "description": "To learn more about my skills, projects and if you would like to contact me, I invite you to visit the links above."
