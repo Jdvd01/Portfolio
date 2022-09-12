@@ -62,14 +62,45 @@ export const Navbar = () => {
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div className="navbar-nav text-start">
-						<Link className="nav-link" to={"/"}><span className="numList">01.</span> {t("menu.about")}</Link>
-						<Link className="nav-link" to={"/skills"}><span className="numList">02.</span> {t("menu.skills")}</Link>
-						<Link className="nav-link" to={"/projects"}><span className="numList">03.</span> {t("menu.projects")}</Link>
-						<Link className="nav-link" to={"/work"}><span className="numList">04.</span> {t("menu.work")}</Link>
-						<Link className="nav-link" to={"/contact"}><span className="numList">05.</span> {t("menu.contact")}</Link>
+						<Link className="nav-link" to={"/"}>
+							<span 
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNavAltMarkup">
+								<span className="numList">01.</span> {t("menu.about")}
+							</span>
+						</Link>
+						<Link className="nav-link" to={"/skills"}>
+							<span 
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNavAltMarkup">
+								<span className="numList">02.</span> {t("menu.skills")}
+							</span>
+						</Link>
+						<Link className="nav-link" to={"/projects"}>
+							<span 
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNavAltMarkup">
+								<span className="numList">03.</span> {t("menu.projects")}
+							</span >
+						</Link>
+						<Link className="nav-link" to={"/work"}>
+							<span 
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNavAltMarkup">
+								<span className="numList">04.</span> {t("menu.work")}
+							</span>
+						</Link>
+						<Link className="nav-link" to={"/contact"}>
+							<span 
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNavAltMarkup">
+								<span className="numList">05.</span> {t("menu.contact")}
+							</span>
+						</Link>
 					</div>
 				</div>
 			</div>
 		</nav>
+
 	);
 };
