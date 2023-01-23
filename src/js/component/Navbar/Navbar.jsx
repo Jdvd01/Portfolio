@@ -41,9 +41,9 @@ export const Navbar = () => {
 						onClick={() => i18next.changeLanguage(actions.newLanguage())}
 					>
 						{store.language == "es" ? (
-							<img src={usa} className="flag" />
-						) : (
 							<img src={espana} className="flag" />
+						) : (
+							<img src={usa} className="flag" />
 						)}
 					</div>
 				</div>
@@ -63,37 +63,47 @@ export const Navbar = () => {
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div className="navbar-nav text-start">
 						<Link className="nav-link" to={"/"}>
-							<span 
+							<span
 								data-bs-toggle="collapse"
-								data-bs-target="#navbarNavAltMarkup">
+								data-bs-target="#navbarNavAltMarkup"
+								onClick={() => setIsClicked((prev) => !prev)}
+							>
 								<span className="numList">01.</span> {t("menu.about")}
 							</span>
 						</Link>
 						<Link className="nav-link" to={"/skills"}>
-							<span 
+							<span
 								data-bs-toggle="collapse"
-								data-bs-target="#navbarNavAltMarkup">
+								data-bs-target="#navbarNavAltMarkup"
+								onClick={() => setIsClicked((prev) => !prev)}
+							>
 								<span className="numList">02.</span> {t("menu.skills")}
 							</span>
 						</Link>
 						<Link className="nav-link" to={"/projects"}>
-							<span 
+							<span
 								data-bs-toggle="collapse"
-								data-bs-target="#navbarNavAltMarkup">
+								data-bs-target="#navbarNavAltMarkup"
+								onClick={() => setIsClicked((prev) => !prev)}
+							>
 								<span className="numList">03.</span> {t("menu.projects")}
 							</span >
 						</Link>
 						<Link className="nav-link" to={"/work"}>
-							<span 
+							<span
 								data-bs-toggle="collapse"
-								data-bs-target="#navbarNavAltMarkup">
+								data-bs-target="#navbarNavAltMarkup"
+								onClick={() => setIsClicked((prev) => !prev)}
+							>
 								<span className="numList">04.</span> {t("menu.work")}
 							</span>
 						</Link>
 						<Link className="nav-link" to={"/contact"}>
-							<span 
+							<span
 								data-bs-toggle="collapse"
-								data-bs-target="#navbarNavAltMarkup">
+								data-bs-target="#navbarNavAltMarkup"
+								onClick={() => setIsClicked((prev) => !prev)}
+							>
 								<span className="numList">05.</span> {t("menu.contact")}
 							</span>
 						</Link>
